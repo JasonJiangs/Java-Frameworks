@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  deploy User object  -->
+    <bean id="user" class="com.spring5.User"></bean>
+
+    <!--  set()  -->
+    <bean id="book" class="com.spring5.Book">
+        <property name="author" value="James"></property>
+        <property name="bName" value="Books Name"></property>
+<!--        <property name="address">-->
+<!--            <null/>-->
+<!--        </property>-->
+
+        <!--  <>  &lt; &gt; -->
+        <property name="address">
+            <value><![CDATA[<<US>>]]></value>
+        </property>
+    </bean>
+
+    <!--  constructor  -->
+    <bean id="order" class="com.spring5.Orders">
+        <constructor-arg name="name" value="Apartment"></constructor-arg>
+        <constructor-arg name="address" value="North Street"></constructor-arg>
+    </bean>
+
+</beans>

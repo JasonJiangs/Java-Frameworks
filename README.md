@@ -1,2 +1,2 @@
 # JavaEE-Coding
- JavaEE Tech stack and frameworks
+ JavaEE technologies: Spring5, MyBatis

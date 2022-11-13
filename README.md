@@ -1,2 +1,2 @@
 # JavaEE-Coding
- JavaEE technologies: Spring5, MyBatis
+ JavaEE technologies: Spring5, MyBatis, Maven, Gradle

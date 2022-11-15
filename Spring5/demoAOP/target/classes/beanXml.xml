@@ -9,10 +9,20 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-<!--    Annotation Scan -->
-    <context:component-scan base-package="com.spring5.annotation"></context:component-scan>
+<!--Using xml file to config AOP -->
 
-<!--    Initiate Aspectj to generate proxy instance -->
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <bean id="book" class="com.spring5.xml.Book"></bean>
+    <bean id="bookProxy" class="com.spring5.xml.BookProxy"></bean>
+
+    <aop:config>
+<!--        config aspect point-->
+        <aop:pointcut id="a" expression="execution(* com.spring5.xml.Book.buy(..))"/>
+
+<!--        config aspect-->
+        <aop:aspect ref="bookProxy">
+<!--            specific function-->
+            <aop:before method="before" pointcut-ref="a"></aop:before>
+        </aop:aspect>
+    </aop:config>
 
 </beans>

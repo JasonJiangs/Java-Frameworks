@@ -23,6 +23,7 @@ public class LombokBuilder {
     public static void main(String[] args) {
         LombokBuilderBuilder lombokBuilderBuilder = LombokBuilder.builder().age(23).name("Tom").addHobby("Soccer").addHobby("Coding");
         System.out.println(lombokBuilderBuilder);
+        System.out.println();
     }
 
 }

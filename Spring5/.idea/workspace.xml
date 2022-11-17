@@ -5,65 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76f43366-638d-47b0-84f4-84afc769df97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_232.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_232.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_232.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spring5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoAOP/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoAOP/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/src/main/java/com/spring5/annotation/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoAOP/src/main/java/com/spring5/annotation/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/src/main/java/com/spring5/annotation/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoAOP/src/main/java/com/spring5/annotation/UserProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoAOP/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/target/classes/com/spring5/JDKProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/target/classes/com/spring5/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/target/classes/com/spring5/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoAOP/target/classes/com/spring5/UserDaoProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/Orders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/bean/Dept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/bean/Emp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/dao/UserDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/testDemo/TestBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring5/testDemo/TestSpring5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/Orders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/bean/Dept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/bean/Emp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/dao/UserDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/testDemo/TestBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/spring5/testDemo/TestSpring5.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java Basic/src/main/java/plugins/StringManipulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668492954735</updated>
       <workItem from="1668492959367" duration="34000" />
+      <workItem from="1668626153123" duration="12000" />
     </task>
     <servers />
   </component>

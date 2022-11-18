@@ -4,6 +4,9 @@ import com.spring.jdbcTemplate.dao.AccountDao;
 import com.spring.jdbcTemplate.dao.AccountImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @Author: Jason
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
+@Transactional(timeout = -1, propagation = Propagation.REQUIRED, isolation = Isolation.REPEATABLE_READ)
 public class AccountService {
 
     @Autowired
@@ -18,16 +22,10 @@ public class AccountService {
 
     public void transferUpdate() {
 
-        try{
-
             accountDao.transfer();
+//            int a= 10/0;
             accountDao.receive();
 
-        } catch (Exception e) {
-
-
-
-        }
     }
 
 

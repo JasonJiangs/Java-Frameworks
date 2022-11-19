@@ -6,6 +6,9 @@ import com.mybatis.utils.SqlSessionUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.List;
 
 /**
@@ -20,5 +23,14 @@ public class TestParameterMapper {
         ParameterMapper mapper = sqlSession.getMapper(ParameterMapper.class);
         List<User> allUser = mapper.getAllUser();
         allUser.forEach(user -> System.out.println(user));
+    }
+
+    @Test
+    public void testJDBC() throws Exception {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection connection = DriverManager.getConnection("", "", "");
+        PreparedStatement preparedStatement = connection.prepareStatement("Select * from t_user where username = ");
+        preparedStatement.executeQuery();
+        preparedStatement.close();
     }
 }

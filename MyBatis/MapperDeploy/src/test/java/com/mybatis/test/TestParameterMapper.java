@@ -25,12 +25,21 @@ public class TestParameterMapper {
         allUser.forEach(user -> System.out.println(user));
     }
 
+    
     @Test
     public void testJDBC() throws Exception {
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection("", "", "");
-        PreparedStatement preparedStatement = connection.prepareStatement("Select * from t_user where username = ");
+        PreparedStatement preparedStatement = connection.prepareStatement("Select * from t_user where username = ?");
+        preparedStatement.setString(1, "username");
         preparedStatement.executeQuery();
         preparedStatement.close();
     }
+
+    @Test
+    public void test() {
+
+    }
+
+
 }

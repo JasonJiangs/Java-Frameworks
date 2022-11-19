@@ -8,4 +8,24 @@
         select * from t_user
     </select>
 
+    <select id="getUserByUsername" resultType="User">
+        select * from t_user where username = #{username}
+    </select>
+
+    <select id="checkLogin" resultType="User">
+        select * from t_user where username = #{arg0} and password = #{arg1}
+    </select>
+
+    <select id="checkLoginByMap" resultType="User">
+        select * from t_user where username = #{username} and password = #{password}
+    </select>
+
+    <select id="insertUser">
+        insert into t_user values (null, #{username}, #{password}, #{age}, #{sex}, #{email})
+    </select>
+
+    <select id="checkLoginByParam" resultType="User">
+        select * from t_user where username = #{un} and password = #{pwd}
+    </select>
+
 </mapper>

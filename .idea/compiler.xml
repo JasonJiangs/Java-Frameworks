@@ -10,11 +10,13 @@
         <module name="Demo01" />
         <module name="SpringMVC" />
         <module name="MapperDeploy" />
+        <module name="Java Basic" />
         <module name="JDBCTemplate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Demo01" target="8" />
+      <module name="Java Basic" target="8" />
       <module name="JDBCTemplate" target="8" />
       <module name="MapperDeploy" target="8" />
       <module name="MyBatis" target="8" />

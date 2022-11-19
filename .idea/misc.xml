@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/Spring5/JDBCTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMVC/pom.xml" />
         <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/MapperDeploy/pom.xml" />
       </list>
     </option>
   </component>

@@ -30,4 +30,12 @@ public class SQLMapperTest {
         int i = mapper.batchDelete("7,8,9");
         System.out.println(i);
     }
+
+    @Test
+    public void testGetUserByTableName() {
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        SQLMapper mapper = sqlSession.getMapper(SQLMapper.class);
+        List<User> userByTableName = mapper.getUserByTableName("t_user");
+        System.out.println(userByTableName);
+    }
 }

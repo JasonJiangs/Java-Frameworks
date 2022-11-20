@@ -17,4 +17,6 @@ public interface SQLMapper {
 
     Integer batchDelete(@Param("ids") String ids);
 
+    List<User> getUserByTableName(@Param("tableName") String tableName);
+
 }

@@ -14,5 +14,9 @@
         delete from t_user where id in (${ids})
     </delete>
 
+    <select id="getUserByTableName" resultType="User">
+        select * from ${tableName}
+    </select>
+
 
 </mapper>

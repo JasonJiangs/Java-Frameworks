@@ -75,6 +75,7 @@ public class TestParameterMapper {
     public void testCheckLoginParam() {
         SqlSession sqlSession = SqlSessionUtils.getSqlSession();
         ParameterMapper mapper = sqlSession.getMapper(ParameterMapper.class);
+        // TODO source code
         User user = mapper.checkLoginByParam("Jason", "123123");
         System.out.println(user);
 

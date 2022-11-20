@@ -19,4 +19,6 @@ public interface SQLMapper {
 
     List<User> getUserByTableName(@Param("tableName") String tableName);
 
+    Integer insertUser(User user);
+
 }

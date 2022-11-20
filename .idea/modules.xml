@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyBatis/CustomMapping/CustomMapping.iml" filepath="$PROJECT_DIR$/MyBatis/CustomMapping/CustomMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis/MapperDeploy/Demo01.iml" filepath="$PROJECT_DIR$/MyBatis/MapperDeploy/Demo01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring5/JDBCTemplate/JDBCTemplate.iml" filepath="$PROJECT_DIR$/Spring5/JDBCTemplate/JDBCTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java Basic/Java Basic.iml" filepath="$PROJECT_DIR$/Java Basic/Java Basic.iml" />

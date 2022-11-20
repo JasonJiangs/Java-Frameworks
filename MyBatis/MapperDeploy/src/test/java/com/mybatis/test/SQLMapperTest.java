@@ -38,4 +38,15 @@ public class SQLMapperTest {
         List<User> userByTableName = mapper.getUserByTableName("t_user");
         System.out.println(userByTableName);
     }
+
+    @Test
+    public void testInsertUser() {
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        SQLMapper mapper = sqlSession.getMapper(SQLMapper.class);
+        User user = new User(null, "Jimmy", "123123", 21, "male", "jimmy423@gmai.com");
+        Integer integer = mapper.insertUser(user);
+        System.out.println(integer);
+        // assign auto generated key (id)
+        System.out.println(user);
+    }
 }

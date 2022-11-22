@@ -1,5 +1,7 @@
 package com.mybatis;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.mybatis.mapper.EmpMapper;
 import com.mybatis.pojo.Emp;
 import org.apache.ibatis.io.Resources;
@@ -31,9 +33,11 @@ public class PageHelperTest {
         /**
          *
          */
-        
+        PageHelper.startPage(1, 1);
         List<Emp> emps = mapper.selectByExample(null);
-        emps.forEach(emp -> System.out.println(emp));
+        PageInfo<Emp> page = new PageInfo<>(emps, 4);
+        System.out.println(page.getNavigateLastPage());
+//        emps.forEach(emp -> System.out.println(emp));
         try {
             sqlSession.close();
             resourceAsStream.close();

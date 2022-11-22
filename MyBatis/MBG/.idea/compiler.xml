@@ -10,5 +10,8 @@
         <module name="MBG" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MBG" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

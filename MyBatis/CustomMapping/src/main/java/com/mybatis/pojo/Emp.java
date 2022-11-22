@@ -11,9 +11,16 @@ import lombok.ToString;
  */
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Emp {
+
+    public Emp(Integer eid, String empName, Integer age, String sex, String email) {
+        this.eid = eid;
+        this.empName = empName;
+        this.age = age;
+        this.sex = sex;
+        this.email = email;
+    }
 
     private Integer eid;
 

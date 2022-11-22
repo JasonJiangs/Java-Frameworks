@@ -8,10 +8,11 @@
     <properties resource="jdbc.properties"></properties>
 
 <!--    Set Global setting of MyBatis-->
-<!--    <settings>-->
-<!--&lt;!&ndash;        empName::emp_name &ndash;&gt;-->
-<!--        <setting name="mapUnderscoreToCamelCase" value="true"/>-->
-<!--    </settings>-->
+    <settings>
+<!--        empName::emp_name -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
 
     <typeAliases>
 <!--        <typeAlias type="com.mybatis.pojo.User" alias="User"></typeAlias>-->

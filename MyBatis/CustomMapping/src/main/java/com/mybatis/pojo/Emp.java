@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 /**
  * @Author: Jason
  * @Date: 2022/11/20 15:28 15 28
@@ -12,7 +14,7 @@ import lombok.ToString;
 
 @Data
 @NoArgsConstructor
-public class Emp {
+public class Emp implements Serializable {
 
     public Emp(Integer eid, String empName, Integer age, String sex, String email) {
         this.eid = eid;

@@ -22,4 +22,6 @@ public interface DynamicSQLMapper {
 
     int deleteMoreByArray(@Param("eidList") Integer[] eidList);
 
+    int insertMoreByList(@Param("empList") List<Emp> empList);
+
 }

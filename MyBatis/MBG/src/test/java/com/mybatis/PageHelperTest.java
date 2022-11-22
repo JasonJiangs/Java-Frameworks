@@ -1,6 +1,7 @@
 package com.mybatis;
 
 import com.mybatis.mapper.EmpMapper;
+import com.mybatis.pojo.Emp;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -9,6 +10,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 /**
  * @Author: Jason
@@ -26,7 +28,12 @@ public class PageHelperTest {
         SqlSessionFactory build = new SqlSessionFactoryBuilder().build(resourceAsStream);
         SqlSession sqlSession = build.openSession(true);
         EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
-
+        /**
+         *
+         */
+        
+        List<Emp> emps = mapper.selectByExample(null);
+        emps.forEach(emp -> System.out.println(emp));
         try {
             sqlSession.close();
             resourceAsStream.close();

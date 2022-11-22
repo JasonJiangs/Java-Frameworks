@@ -21,6 +21,10 @@
         <package name="com.mybatis.pojo"/>
     </typeAliases>
 
+    <plugins>
+        <!--设置分页插件-->
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
 
     <!--  deploy db configuration  -->
     <environments default="development">

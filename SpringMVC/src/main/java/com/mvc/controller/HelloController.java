@@ -19,4 +19,9 @@ public class HelloController {
         return "index";
     }
 
+    @RequestMapping(value = "/hello")
+    public String toHelloPage() {
+        return "helloPage";
+    }
+
 }

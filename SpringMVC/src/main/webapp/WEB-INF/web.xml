@@ -13,7 +13,7 @@
             <!-- contextConfigLocation为固定值 -->
             <param-name>contextConfigLocation</param-name>
             <!-- 使用classpath:表示从类路径查找配置文件，例如maven工程中的src/main/resources -->
-            <param-value>classpath:SpringMVC.xml</param-value>
+            <param-value>classpath:springMVC.xml</param-value>
         </init-param>
         <!--
             作为框架的核心组件，在启动过程中有大量的初始化操作要做，而这些操作放在第一次请求时才执行会严重影响访问速度
@@ -31,5 +31,17 @@
     </servlet-mapping>
 
 
+    <context-param>
+        <param-name>spring.profiles.active</param-name>
+        <param-value>dev</param-value>
+    </context-param>
+    <context-param>
+        <param-name>spring.profiles.default</param-name>
+        <param-value>dev</param-value>
+    </context-param>
+    <context-param>
+        <param-name>spring.liveBeansView.mbeanDomain</param-name>
+        <param-value>dev</param-value>
+    </context-param>
 </web-app>
 

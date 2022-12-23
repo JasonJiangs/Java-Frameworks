@@ -9,11 +9,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
+@RequestMapping("/experience")
 public class RequestMappingController {
 
-    @RequestMapping("/experience")
-    public String success() {
-        return "experience";
+    @RequestMapping("/academic")
+    public String toAcademic() {
+        return "academic";
+    }
+
+
+    @RequestMapping("/industry")
+    public String toSuccess() {
+        return "industry";
     }
 
 }

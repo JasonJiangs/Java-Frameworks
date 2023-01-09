@@ -9,5 +9,12 @@
 <!--<a th:href="@{/hello}">HelloWorld</a><br/>-->
 <a th:href="@{/experience/academic}">Academic Experience</a><br/>
 <a th:href="@{/experience/industry}">Industry Experience</a><br/>
+
+<form th:action="@{/experience/researchIndustry}" method="post">
+    <input type="submit" value="Test Post from Method">
+</form>
+
+
+<a th:href="@{/experience/getMapping}">Test Get Mapping</a><br/>
 </body>
 </html>

@@ -1,7 +1,9 @@
 package com.mvc.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @Author: Jason
@@ -18,8 +20,16 @@ public class RequestMappingController {
     }
 
 
-    @RequestMapping("/industry")
-    public String toSuccess() {
+    @RequestMapping(
+            value = {"/industry", "/researchIndustry"},
+            method = {RequestMethod.GET, RequestMethod.POST}
+    )
+    public String toIndustry() {
+        return "industry";
+    }
+
+    @GetMapping("/getMapping")
+    public String testGetMapping() {
         return "industry";
     }
 

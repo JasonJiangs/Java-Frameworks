@@ -22,7 +22,8 @@ public class RequestMappingController {
 
     @RequestMapping(
             value = {"/industry", "/researchIndustry"},
-            method = {RequestMethod.GET, RequestMethod.POST}
+            method = {RequestMethod.GET, RequestMethod.POST},
+            params = {"username"}
     )
     public String toIndustry() {
         return "industry";
@@ -32,5 +33,11 @@ public class RequestMappingController {
     public String testGetMapping() {
         return "industry";
     }
+
+    @RequestMapping(value = "/testPut", method = RequestMethod.PUT)
+    public String testPut() {
+        return "industry";
+    }
+
 
 }

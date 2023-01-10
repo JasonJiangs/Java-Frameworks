@@ -14,7 +14,14 @@
     <input type="submit" value="Test Post from Method">
 </form>
 
-
 <a th:href="@{/experience/getMapping}">Test Get Mapping</a><br/>
+
+<form th:action="@{/experience/testPut}" method="put">
+    <input type="submit" value="Test Post from Method">
+</form>
+
+
+<a th:href="@{/experience/industry(username='admin', password='123456')}">Industry Experience 2</a><br/>
+
 </body>
 </html>

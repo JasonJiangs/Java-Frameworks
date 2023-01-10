@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Params</title>
+</head>
+<body>
+<h1>test param</h1>
+
+<a th:href="@{/testServletAPI(username='test_servlet',password=123456)}">测试获取请求参数-- >/testServletAPI</a><br>
+<a th:href="@{/testParam(username='test_param',password=123456)}">测试获取请求参数-- >/testParam</a><br>
+
+<form th:action="@{/testParam}" method="get">
+    Username: <input type="text" name="user_name"><br>
+    Password: <input type="password" name="password"><br>
+    Hobby: <input type="checkbox" name="hobby" value="a">a
+    <input type="checkbox" name="hobby" value="b">b
+    <input type="checkbox" name="hobby" value="c">c<br>
+    <input type="submit" value="Submit Test">
+</form>
+
+</body>
+</html>

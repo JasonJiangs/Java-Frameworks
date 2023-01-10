@@ -24,4 +24,9 @@ public class HelloController {
         return "helloPage";
     }
 
+    @RequestMapping("/param")
+    public String param() {
+        return "test_param";
+    }
+
 }

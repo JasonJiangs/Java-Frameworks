@@ -2,6 +2,7 @@ package com.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -36,6 +37,12 @@ public class RequestMappingController {
 
     @RequestMapping(value = "/testPut", method = RequestMethod.PUT)
     public String testPut() {
+        return "industry";
+    }
+
+    @RequestMapping("/industry/{id}/{username}")
+    public String testRest(@PathVariable("id") String id, @PathVariable("username") String username){
+        System.out.println("id:"+id+",username:"+username);
         return "industry";
     }
 
